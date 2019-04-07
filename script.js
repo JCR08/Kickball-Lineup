@@ -13,6 +13,7 @@ function createLineup() {
   $('#num-of-guys').css('display', 'none');
   $('#num-of-girls').css('display', 'none');
   $('#next-inning').css('display', 'block');
+  $('#next-inning').css('margin', 'auto');
   displayMales();
   displayFemales();
 }

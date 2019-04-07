@@ -1,13 +1,71 @@
 $team-color: #38761d;
 
-h1 {
-  color: $team-color;
+button {
+  background: transparent;
+  border-color: #aaa;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 25px;
+  margin: 5px;
+  min-width: 100px;
+  max-width: 250px;
+  width: 40%;
+  transition: .3s;
+
+  &:focus, &:active {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: lighten($team-color, 65%);
+  }
+
+  &.active {
+    background: $team-color;
+    color: white;
+  }
 }
 
-.active {
-  background-color: red;
-}
+body {
+  text-align: center;
 
-#next-inning {
-  display: none;
+  #people-sitting {
+    display: flex;
+
+    #guys-sitting, #girls-sitting {
+      width: 50%;
+    }
+  }
+
+  #next-inning {
+    display: none;
+  }
+
+  #num-of-guys, #num-of-girls {
+    background: url("http://i62.tinypic.com/15xvbd5.png") no-repeat 96% 0;
+    background-color: lighten($team-color, 65%);
+    height: 29px;
+    overflow: hidden;
+    margin: auto;
+    width: 50%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    select {
+      background: transparent;
+      border: none;
+      font-size: 14px;
+      height: 29px;
+      padding: 5px; /* If you add too much padding here, the options won't show in IE */
+      width: 105%;
+
+      cursor: pointer;
+
+      &:focus, &:active {
+        outline: none;
+      }
+    }
+  }
 }

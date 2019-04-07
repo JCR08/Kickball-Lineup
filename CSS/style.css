@@ -1,10 +1,51 @@
-h1 {
-  color: #38761d; }
+button {
+  background: transparent;
+  border-color: #aaa;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 25px;
+  margin: 5px;
+  min-width: 100px;
+  max-width: 250px;
+  width: 40%;
+  transition: .3s; }
+  button:focus, button:active {
+    outline: none; }
+  button:hover {
+    cursor: pointer;
+    background: #ecf9e6; }
+  button.active {
+    background: #38761d;
+    color: white; }
 
-.active {
-  background-color: red; }
-
-#next-inning {
-  display: none; }
+body {
+  text-align: center; }
+  body #people-sitting {
+    display: flex; }
+    body #people-sitting #guys-sitting, body #people-sitting #girls-sitting {
+      width: 50%; }
+  body #next-inning {
+    display: none; }
+  body #num-of-guys, body #num-of-girls {
+    background: url("http://i62.tinypic.com/15xvbd5.png") no-repeat 96% 0;
+    background-color: #ecf9e6;
+    height: 29px;
+    overflow: hidden;
+    margin: auto;
+    width: 50%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+    body #num-of-guys select, body #num-of-girls select {
+      background: transparent;
+      border: none;
+      font-size: 14px;
+      height: 29px;
+      padding: 5px;
+      /* If you add too much padding here, the options won't show in IE */
+      width: 105%;
+      cursor: pointer; }
+      body #num-of-guys select:focus, body #num-of-guys select:active, body #num-of-girls select:focus, body #num-of-girls select:active {
+        outline: none; }
 
 /*# sourceMappingURL=style.css.map */
