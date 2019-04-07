@@ -1,0 +1,13 @@
+$team-color: #38761d;
+
+h1 {
+  color: $team-color;
+}
+
+.active {
+  background-color: red;
+}
+
+#next-inning {
+  display: none;
+}
