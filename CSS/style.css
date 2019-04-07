@@ -42,7 +42,6 @@ body {
       font-size: 14px;
       height: 29px;
       padding: 5px;
-      /* If you add too much padding here, the options won't show in IE */
       width: 105%;
       cursor: pointer; }
       body #num-of-guys select:focus, body #num-of-guys select:active, body #num-of-girls select:focus, body #num-of-girls select:active {
