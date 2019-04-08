@@ -11,9 +11,10 @@ button {
   transition: .3s; }
   button:focus, button:active {
     outline: none; }
-  button:hover {
-    cursor: pointer;
-    background: #ecf9e6; }
+  @media screen and (min-width: 920px) {
+    button:hover {
+      cursor: pointer;
+      background: #ecf9e6; } }
   button.active {
     background: #38761d;
     color: white; }

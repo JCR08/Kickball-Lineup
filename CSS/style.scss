@@ -16,9 +16,11 @@ button {
     outline: none;
   }
 
-  &:hover {
-    cursor: pointer;
-    background: lighten($team-color, 65%);
+  @media screen and (min-width: 920px) {
+    &:hover {
+      cursor: pointer;
+      background: lighten($team-color, 65%);
+    }
   }
 
   &.active {
