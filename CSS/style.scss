@@ -32,9 +32,10 @@ body {
 
   #people-sitting {
     display: flex;
+    justify-content: center;
 
     #guys-sitting, #girls-sitting {
-      width: 45%;
+      width: 40%;
       margin: 10px;
     }
   }
@@ -50,12 +51,17 @@ body {
 
   #submit, #next-inning {
     width: 50%;
-    background-color: $team-color;
-    color: white;
+    background-color: transparent;
+    border-color: $team-color;
+    color: $team-color;
     transition: 0.3s;
 
-    &:hover {
-      background-color: darken($team-color, 10%);
+
+    @media screen and (min-width: 920px) {
+      &:hover {
+        background-color: lighten($team-color, 50%);
+        cursor: pointer;
+      }
     }
   }
 
@@ -84,5 +90,12 @@ body {
         outline: none;
       }
     }
+  }
+
+  .player-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -21,9 +21,10 @@ button {
 body {
   text-align: center; }
   body #people-sitting {
-    display: flex; }
+    display: flex;
+    justify-content: center; }
     body #people-sitting #guys-sitting, body #people-sitting #girls-sitting {
-      width: 45%;
+      width: 40%;
       margin: 10px; }
   body .next-inning-hidden {
     display: none; }
@@ -32,11 +33,14 @@ body {
     margin: auto; }
   body #submit, body #next-inning {
     width: 50%;
-    background-color: #38761d;
-    color: white;
+    background-color: transparent;
+    border-color: #38761d;
+    color: #38761d;
     transition: 0.3s; }
-    body #submit:hover, body #next-inning:hover {
-      background-color: #254d13; }
+    @media screen and (min-width: 920px) {
+      body #submit:hover, body #next-inning:hover {
+        background-color: #bceaa8;
+        cursor: pointer; } }
   body #num-of-guys, body #num-of-girls {
     background: url("http://i62.tinypic.com/15xvbd5.png") no-repeat 96% 0;
     background-color: #ecf9e6;
@@ -57,5 +61,10 @@ body {
       cursor: pointer; }
       body #num-of-guys select:focus, body #num-of-guys select:active, body #num-of-girls select:focus, body #num-of-girls select:active {
         outline: none; }
+  body .player-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
