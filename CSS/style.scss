@@ -38,8 +38,24 @@ body {
     }
   }
 
-  #next-inning {
+  .next-inning-hidden {
     display: none;
+  }
+
+  .next-inning-visible {
+    display: block;
+    margin: auto;
+  }
+
+  #submit, #next-inning {
+    width: 50%;
+    background-color: $team-color;
+    color: white;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: darken($team-color, 10%);
+    }
   }
 
   #num-of-guys, #num-of-girls {

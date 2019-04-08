@@ -24,8 +24,18 @@ body {
     display: flex; }
     body #people-sitting #guys-sitting, body #people-sitting #girls-sitting {
       width: 50%; }
-  body #next-inning {
+  body .next-inning-hidden {
     display: none; }
+  body .next-inning-visible {
+    display: block;
+    margin: auto; }
+  body #submit, body #next-inning {
+    width: 50%;
+    background-color: #38761d;
+    color: white;
+    transition: 0.3s; }
+    body #submit:hover, body #next-inning:hover {
+      background-color: #254d13; }
   body #num-of-guys, body #num-of-girls {
     background: url("http://i62.tinypic.com/15xvbd5.png") no-repeat 96% 0;
     background-color: #ecf9e6;
