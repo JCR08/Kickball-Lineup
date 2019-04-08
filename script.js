@@ -9,11 +9,12 @@ let numOfFemales;
 function createLineup() {
   randomizedMales = malePlayers.sort(function(a, b){return 0.5 - Math.random()});
   randomizedFemales = femalePlayers.sort(function(a, b){return 0.5 - Math.random()});
+  $(window).scrollTop(0);
   $('#submit').css('display', 'none');
   $('#num-of-guys').css('display', 'none');
   $('#num-of-girls').css('display', 'none');
-  $('#next-inning').css('display', 'block');
-  $('#next-inning').css('margin', 'auto');
+  $('#next-inning').removeClass('next-inning-hidden');
+  $('#next-inning').addClass('next-inning-visible');
   displayMales();
   displayFemales();
 }
