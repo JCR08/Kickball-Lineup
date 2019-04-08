@@ -23,7 +23,8 @@ body {
   body #people-sitting {
     display: flex; }
     body #people-sitting #guys-sitting, body #people-sitting #girls-sitting {
-      width: 50%; }
+      width: 45%;
+      margin: 10px; }
   body .next-inning-hidden {
     display: none; }
   body .next-inning-visible {
